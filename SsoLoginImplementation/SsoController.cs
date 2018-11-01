@@ -21,6 +21,12 @@ namespace SsoLogin
             _loginFactory = loginFactory;    
         }
 
+        /*
+         * POST api/sso?type={ISsoLogin.Type}
+         *      {
+         *         payload
+         *      }
+         */
         [HttpPost]
         public async Task<IActionResult> SsoExternalClients([FromBody]object param, 
                                                             [FromQuery]string type)
