@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Kafka Consumer",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-consumer",
+            "program": "${workspaceFolder}/kafka-dotnet/kafka-console/consumer/bin/Debug/netcoreapp2.1/consumer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Kafka Producer",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-producer",
+            "program": "${workspaceFolder}/kafka-dotnet/kafka-console/producer/bin/Debug/netcoreapp2.1/producer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RabbitMQ Publisher",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-rabbit-publisher",
+            "program": "${workspaceFolder}/rabbitmq/rabbit.console/publisher/bin/Debug/netcoreapp2.1/rabbit.prublisher.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RabbitMQ Subscriber",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-rabbit-subscriber",
+            "program": "${workspaceFolder}/rabbitmq/rabbit.console/subscriber/bin/Debug/netcoreapp2.1/rabbit.subscriber.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
