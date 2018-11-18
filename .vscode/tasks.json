@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/kafka-console/consumer/consumer.csproj"
+                "${workspaceFolder}/kafka-dotnet/kafka-console/consumer/consumer.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/kafka-console/producer/producer.csproj"
+                "${workspaceFolder}/kafka-dotnet/kafka-console/producer/producer.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -38,6 +38,16 @@
             "args": [
                 "build",
                 "${workspaceFolder}/rabbitmq/rabbit.console/subscriber/rabbit.subscriber.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-configuration-sample",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Configuration/Configuration/Configuration.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

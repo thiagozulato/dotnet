@@ -28,6 +28,7 @@
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         },
+
         {
             "name": "RabbitMQ Publisher",
             "type": "coreclr",
@@ -51,6 +52,34 @@
             "console": "internalConsole",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
+        },
+
+        {
+            "name": "WebApi Configuration Sample",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-configuration-sample",
+            "program": "${workspaceFolder}/Configuration/Configuration/bin/Debug/netcoreapp2.1/Configuration.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
         }
     ]
 }
