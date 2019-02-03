@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Pipeline",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-pipeline-sample",
+            "program": "${workspaceFolder}/Pipeline/Pipeline/bin/Debug/netcoreapp2.2/Pipeline.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
             "name": "Kafka Consumer",
             "type": "coreclr",
             "request": "launch",

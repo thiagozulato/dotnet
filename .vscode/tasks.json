@@ -50,6 +50,16 @@
                 "${workspaceFolder}/Configuration/Configuration/Configuration.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-pipeline-sample",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Pipeline/Pipeline/Pipeline.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }
